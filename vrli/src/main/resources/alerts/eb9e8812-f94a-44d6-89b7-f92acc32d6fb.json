@@ -1,0 +1,39 @@
+{
+  "id": "eb9e8812-f94a-44d6-89b7-f92acc32d6fb",
+  "enabled": true,
+  "type": "RATE_BASED",
+  "name": "Build Tools for VMware Aria Alert",
+  "hitCount": 0,
+  "hitOperator": "GREATER_THAN",
+  "searchPeriod": 300000,
+  "searchInterval": 60000,
+  "info": "Build Tools for VMware Aria Alert",
+  "recommendation": "Test recomendations",
+  "contentPackNamespace": null,
+  "contentPackName": null,
+  "recipients": {
+    "emails": [],
+    "vrops": {
+      "vcopsResourceName": "Log Insight Server",
+      "vcopsResourceKindKey": "resourceName\u003dLog Insight Server\u0026adapterKindKey\u003dLogInsight\u0026resourceKindKey\u003dLogInsightLogServer",
+      "vcopsCriticality": "info",
+      "autoClearAlertAfterTimeout": false,
+      "autoClearAlertsTimeoutMinutes": 15
+    },
+    "webhookIds": []
+  },
+  "stats": {
+    "lastRanAt": 1680529650480,
+    "nextRunAt": 1680529710480,
+    "runCount": 4,
+    "lastRunTime": 1,
+    "totalRunTime": 5,
+    "lastHitAt": 0
+  },
+  "ownerUuid": "a4ed2d9b-015b-4ab6-9fa0-e368159a1bbf",
+  "ownerName": "admin",
+  "query": {
+    "chartQuery": "{\"query\":\"test1\",\"startTimeMillis\":1680528667714,\"endTimeMillis\":1680528967714,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery": null
+  }
+}

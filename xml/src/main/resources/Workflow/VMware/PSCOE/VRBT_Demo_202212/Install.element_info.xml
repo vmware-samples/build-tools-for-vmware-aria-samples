@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment></comment>
+<entry key="categoryPath">VMware.PSCOE.VRBT_Demo</entry>
+<entry key="name">Install</entry>
+<entry key="type">Workflow</entry>
+<entry key="id">3617107975829378234967908345654834235</entry>
+</properties>

@@ -1,0 +1,10 @@
+{
+  "id": "809e23c8-5198-4eb8-b1d6-c0a781b51652",
+  "name": "vRBT Simple Cloud Template",
+  "form": "{\"layout\":{\"pages\":[{\"id\":\"page_general\",\"title\":\"General\",\"sections\":[{\"id\":\"section_project\",\"fields\":[{\"id\":\"project\",\"display\":\"dropDown\",\"signpostPosition\":\"right-middle\"}]},{\"id\":\"section_deploymentName\",\"fields\":[{\"id\":\"deploymentName\",\"display\":\"textField\",\"state\":{\"visible\":true,\"read-only\":false},\"signpostPosition\":\"right-middle\"}]},{\"id\":\"section_vmName\",\"fields\":[{\"id\":\"vmName\",\"display\":\"textField\",\"state\":{\"visible\":true,\"read-only\":true},\"signpostPosition\":\"right-middle\"}]}]}]},\"schema\":{\"vmName\":{\"label\":\"Hostname\",\"type\":{\"dataType\":\"string\",\"isMultiple\":false},\"default\":{\"bind\":\"deploymentName\"},\"constraints\":{\"required\":true,\"max-value\":9}},\"project\":{\"label\":\"Project\",\"type\":{\"dataType\":\"string\",\"isMultiple\":false},\"valueList\":{\"id\":\"projects\",\"type\":\"scriptAction\"},\"constraints\":{\"required\":true}},\"deploymentName\":{\"label\":\"Deployment Name\",\"type\":{\"dataType\":\"string\",\"isMultiple\":false},\"default\":\"testvm010\",\"constraints\":{\"required\":true,\"max-value\":900}}},\"options\":{\"externalValidations\":[]}}",
+  "styles": null,
+  "sourceType": "com.vmw.blueprint",
+  "type": "requestForm",
+  "status": "ON",
+  "formFormat": "JSON"
+}

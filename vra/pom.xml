@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.vmware.pscoe.vra-ng</groupId>
+		<artifactId>vra-ng-package</artifactId>
+		<version>2.31.1</version>
+	</parent>
+
+	<groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+	<artifactId>vra</artifactId>
+	<version>1.0.11-SNAPSHOT</version>
+	<packaging>vra-ng</packaging>
+	<scm>
+		<developerConnection>${scmDeveloperConnection}</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<description>
+    This package is licensed under https://github.com/vmware-samples/build-tools-for-vmware-aria-samples/blob/main/LICENSE
+	</description>
+	<licenses>
+		<license>
+			<name>BSD 2-Clause License</name>
+			<url>https://github.com/vmware-samples/build-tools-for-vmware-aria-samples/blob/main/LICENSE</url>
+			<distribution>pom</distribution>
+		</license>
+	</licenses>
+	<properties>
+		<license.includes>**/*.js,**/*.ts</license.includes>
+		<license.excludes />
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+			<artifactId>vro</artifactId>
+			<version>1.0.11-SNAPSHOT</version>
+			<type>package</type>
+		</dependency>
+		<dependency>
+			<groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+			<artifactId>actions</artifactId>
+			<version>1.0.11-SNAPSHOT</version>
+			<type>package</type>
+		</dependency>
+		<dependency>
+			<groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+			<artifactId>xml</artifactId>
+			<version>1.0.11-SNAPSHOT</version>
+			<type>package</type>
+		</dependency>
+		<dependency>
+			<groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+			<artifactId>cs</artifactId>
+			<version>1.0.11-SNAPSHOT</version>
+			<type>cs</type>
+		</dependency>
+		<dependency>
+			<groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+			<artifactId>vrops</artifactId>
+			<version>1.0.11-SNAPSHOT</version>
+			<type>vrops</type>
+		</dependency>
+		<dependency>
+			<groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+			<artifactId>abxs-python</artifactId>
+			<version>1.0.11-SNAPSHOT</version>
+			<type>abx</type>
+		</dependency>
+		<dependency>
+			<groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+			<artifactId>abxs-nodejs</artifactId>
+			<version>1.0.11-SNAPSHOT</version>
+			<type>abx</type>
+		</dependency>
+		<dependency>
+			<groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+			<artifactId>abxs-ps1</artifactId>
+			<version>1.0.11-SNAPSHOT</version>
+			<type>abx</type>
+		</dependency>
+	</dependencies>
+</project>

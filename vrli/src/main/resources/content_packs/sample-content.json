@@ -1,0 +1,53 @@
+{
+  "name": "sample-content",
+  "namespace": "com.vmware.pscoe.templates.buildtoolsforvmwareariasamples",
+  "contentPackId": "com.vmware.pscoe.templates.buildtoolsforvmwareariasamples",
+  "contentVersion": "1.0",
+  "author": "",
+  "url": "",
+  "framework": "#9c4",
+  "version": "2.4",
+  "extractedFields": [],
+  "queries": [],
+  "alerts": [
+    {
+      "name": "Build Tools for VMware Aria Alert",
+      "info": "Build Tools for VMware Aria Alert",
+      "recommendation": "Test recomendations",
+      "alertType": "RATE_BASED",
+      "chartQuery": "{\"query\":\"test1\",\"startTimeMillis\":1680528667714,\"endTimeMillis\":1680528967714,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+      "hitCount": 0.0,
+      "hitOperator": "GREATER_THAN",
+      "searchPeriod": 300000,
+      "searchInterval": 60000
+    }
+  ],
+  "dashboardSections": [
+    {
+      "views": [
+        {
+          "name": "Dashboard 1",
+          "constraints": [],
+          "rows": [
+            {
+              "widgets": [
+                {
+                  "name": "Total Events",
+                  "info": "The total number of events received over time.",
+                  "gridWidth": "1/2",
+                  "chartOptions": "{\"doublegroupbymultiseries\":false}",
+                  "widgetType": "chart",
+                  "chartQuery": "{\"query\":\"\",\"startTimeMillis\":0,\"endTimeMillis\":0,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}"
+                }
+              ]
+            }
+          ],
+          "itemUuid": "c2b9de36-fef1-32eb-91be-6aa4ec13a1ab"
+        }
+      ],
+      "header": ""
+    }
+  ],
+  "aliasFields": [],
+  "aliasRules": []
+}

@@ -1,0 +1,1216 @@
+{
+   "dashboards": [{
+      "autoswitchEnabled": false,
+      "columnCount": 1,
+      "columnProportion": "1",
+      "creationTime": 1572276544816,
+      "dashboardNavigations": {},
+      "description": "",
+      "disabled": false,
+      "gridsterMaxColumns": 12,
+      "hidden": false,
+      "homeTab": false,
+      "id": "65cf8d55-c161-4358-9a4d-89965f3e5d1d",
+      "importAttempts": 0,
+      "importComplete": true,
+      "isDefault": false,
+      "locked": false,
+      "name": "xCloud/xCloud-Configuration Maximums",
+      "namePath": "xCloud",
+      "rank": 95,
+      "shared": true,
+      "states": [],
+      "temporary": false,
+      "userId": "5cd42490-508c-475b-899f-7ef4c6266312",
+      "widgetInteractions": [
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "729fbcfb-2664-4162-a3c6-9bf455863400",
+            "widgetIdReceiver": "4d2f19eb-e8e2-4bfd-97e3-7d3b212f9a26"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "dffbcfc0-2eca-4c69-b628-8e2bbe596d20",
+            "widgetIdReceiver": "4d2f19eb-e8e2-4bfd-97e3-7d3b212f9a26"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "a1ad1039-c33e-4f80-8336-8af5c47ccd6e",
+            "widgetIdReceiver": "4d2f19eb-e8e2-4bfd-97e3-7d3b212f9a26"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "5234cf05-04ec-4f1d-b3d4-5db2697e2aa9",
+            "widgetIdReceiver": "4d2f19eb-e8e2-4bfd-97e3-7d3b212f9a26"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "89ccaa11-c9d7-41f6-acb3-a5ea2d11dfe5",
+            "widgetIdReceiver": "4d2f19eb-e8e2-4bfd-97e3-7d3b212f9a26"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "ce128e56-5e08-4175-be13-e6e1f34d374e",
+            "widgetIdReceiver": "4d2f19eb-e8e2-4bfd-97e3-7d3b212f9a26"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "668d7301-202e-45a8-b968-1fffe8c1a079",
+            "widgetIdReceiver": "4d2f19eb-e8e2-4bfd-97e3-7d3b212f9a26"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "13330fc1-6d78-4a0f-80e8-3e8f944590df",
+            "widgetIdReceiver": "4d2f19eb-e8e2-4bfd-97e3-7d3b212f9a26"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "d7702cbf-a5b7-481a-9c64-ca62b65cd436",
+            "widgetIdReceiver": "4d2f19eb-e8e2-4bfd-97e3-7d3b212f9a26"
+         }
+      ],
+      "widgets": [
+         {
+            "collapsed": false,
+            "config": {
+               "boxColumns": 4,
+               "boxHeight": null,
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "labelSize": 16,
+               "maxCellCount": 100,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceKindMetrics": [
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel3373-1",
+                        "isStringMetric": false,
+                        "label": "vROps Config Max Reached",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_8da18c53-ebce-4d44-bd73-ed0612dee7ad",
+                        "metricName": "Super Metric|xCloud-vROps-ConfigMaxLimitReached",
+                        "metricUnitId": null,
+                        "orangeBound": 0.2,
+                        "redBound": 1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "vRealize Operations Cluster",
+                        "unit": null,
+                        "yellowBound": 0.1
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel1692-1",
+                        "isStringMetric": false,
+                        "label": "Objects",
+                        "link": "",
+                        "metricKey": "PrimaryResourcesCount",
+                        "metricName": "Number of primary Objects",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "vRealize Operations Cluster",
+                        "unit": null,
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel1692-2",
+                        "isStringMetric": false,
+                        "label": "Metrics",
+                        "link": "",
+                        "metricKey": "PrimaryMetricsCount",
+                        "metricName": "Number of primary metrics",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "vRealize Operations Cluster",
+                        "unit": null,
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel2764-1",
+                        "isStringMetric": false,
+                        "label": "Active Sessions",
+                        "link": "",
+                        "metricKey": "UI|TotalSessionCount",
+                        "metricName": "UI|Total number of active sessions",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "vRealize Operations Cluster",
+                        "unit": null,
+                        "yellowBound": null
+                     }
+                  ],
+                  "resourceMetrics": [],
+                  "subMode": "resourceKindAll"
+               },
+               "mode": {"layoutMode": "fixedView"},
+               "oldMetricValues": true,
+               "periodLength": "last24Hour",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": 0},
+               "resInteractionMode": null,
+               "resource": [],
+               "roundDecimals": null,
+               "selfProvider": {"selfProvider": true},
+               "showDT": {"showDT": true},
+               "showMetricName": {"showMetricName": true},
+               "showMetricUnit": {"showMetricUnit": true},
+               "showResourceName": {"showResourceName": false},
+               "showSparkline": {"showSparkline": true},
+               "title": "vROps",
+               "valueSize": 24,
+               "visualTheme": 5
+            },
+            "gridsterCoords": {
+               "h": 4,
+               "w": 12,
+               "x": 1,
+               "y": 17
+            },
+            "height": 210,
+            "id": "f641a997-1a33-4b80-bbea-a461ed412715",
+            "title": "vROps",
+            "type": "Scoreboard"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "boxColumns": 4,
+               "boxHeight": null,
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "labelSize": 16,
+               "maxCellCount": 100,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceKindMetrics": [
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel2534-1",
+                        "isStringMetric": false,
+                        "label": "vCenter Servers",
+                        "link": "",
+                        "metricKey": "summary|total_number_vcenters",
+                        "metricName": "Summary|Total Number of vCenter Server(s)",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "resourceKindName": "vSphere World",
+                        "unit": null,
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel2534-2",
+                        "isStringMetric": false,
+                        "label": "Datacenters",
+                        "link": "",
+                        "metricKey": "summary|total_number_datacenters",
+                        "metricName": "Summary|Total Number of Datacenters",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "resourceKindName": "vSphere World",
+                        "unit": null,
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel2534-3",
+                        "isStringMetric": false,
+                        "label": "Clusters",
+                        "link": "",
+                        "metricKey": "summary|total_number_clusters",
+                        "metricName": "Summary|Total Number of Clusters",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "resourceKindName": "vSphere World",
+                        "unit": null,
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel2534-8",
+                        "isStringMetric": false,
+                        "label": "Datastores",
+                        "link": "",
+                        "metricKey": "summary|total_number_datastores",
+                        "metricName": "Summary|Total Number of Datastores",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "resourceKindName": "vSphere World",
+                        "unit": null,
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel2534-4",
+                        "isStringMetric": false,
+                        "label": "Hosts",
+                        "link": "",
+                        "metricKey": "summary|total_number_hosts",
+                        "metricName": "Summary|Total Number of Hosts",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "resourceKindName": "vSphere World",
+                        "unit": null,
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel2534-5",
+                        "isStringMetric": false,
+                        "label": "Running Hosts",
+                        "link": "",
+                        "metricKey": "summary|number_running_hosts",
+                        "metricName": "Summary|Number of Running Hosts",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "resourceKindName": "vSphere World",
+                        "unit": null,
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel2534-6",
+                        "isStringMetric": false,
+                        "label": "VMs",
+                        "link": "",
+                        "metricKey": "summary|total_number_vms",
+                        "metricName": "Summary|Total Number of VMs",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "resourceKindName": "vSphere World",
+                        "unit": null,
+                        "yellowBound": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel2534-7",
+                        "isStringMetric": false,
+                        "label": "Running VMs",
+                        "link": "",
+                        "metricKey": "summary|number_running_vms",
+                        "metricName": "Summary|Number of Running VMs",
+                        "metricUnitId": null,
+                        "orangeBound": null,
+                        "redBound": null,
+                        "resourceKindId": "resourceKind:id:1_::_",
+                        "resourceKindName": "vSphere World",
+                        "unit": null,
+                        "yellowBound": null
+                     }
+                  ],
+                  "resourceMetrics": [],
+                  "subMode": "resourceKindAll"
+               },
+               "mode": {"layoutMode": "fixedView"},
+               "oldMetricValues": true,
+               "periodLength": "last24Hour",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": 0},
+               "resInteractionMode": null,
+               "resource": [],
+               "roundDecimals": null,
+               "selfProvider": {"selfProvider": true},
+               "showDT": {"showDT": true},
+               "showMetricName": {"showMetricName": true},
+               "showMetricUnit": {"showMetricUnit": true},
+               "showResourceName": {"showResourceName": false},
+               "showSparkline": {"showSparkline": true},
+               "title": "vSphere",
+               "valueSize": 24,
+               "visualTheme": 5
+            },
+            "gridsterCoords": {
+               "h": 7,
+               "w": 12,
+               "x": 1,
+               "y": 21
+            },
+            "height": 381,
+            "id": "6d6decda-08a9-4404-a957-c9a6900fb56b",
+            "title": "vSphere",
+            "type": "Scoreboard"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "boxColumns": 3,
+               "boxHeight": null,
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "labelSize": 16,
+               "maxCellCount": 100,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceKindMetrics": [
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel1497-1",
+                        "isStringMetric": false,
+                        "label": "Health",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_86916012-fdb5-406f-b743-cae1ff729f1d",
+                        "metricName": "Super Metric|xCloud-AZ Health",
+                        "metricUnitId": null,
+                        "orangeBound": 50,
+                        "redBound": 25,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "xCloud-Availability Zone ",
+                        "unit": null,
+                        "yellowBound": 75
+                     },
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel1497-2",
+                        "isStringMetric": false,
+                        "label": "Risk",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_25e16be9-0d2e-4e13-84a2-37acc696a82c",
+                        "metricName": "Super Metric|xCloud-AZ Risk",
+                        "metricUnitId": null,
+                        "orangeBound": 50,
+                        "redBound": 75,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "xCloud-Availability Zone ",
+                        "unit": null,
+                        "yellowBound": 25
+                     },
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel1497-3",
+                        "isStringMetric": false,
+                        "label": "Efficiency",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_a56f1a94-8be2-4229-bafc-5a204ed99460",
+                        "metricName": "Super Metric|xCloud-AZ Efficiency",
+                        "metricUnitId": null,
+                        "orangeBound": 50,
+                        "redBound": 25,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "xCloud-Availability Zone ",
+                        "unit": null,
+                        "yellowBound": 75
+                     }
+                  ],
+                  "resourceMetrics": [],
+                  "subMode": "resourceKindAll"
+               },
+               "mode": {"layoutMode": "fixedView"},
+               "oldMetricValues": false,
+               "periodLength": "last24Hour",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": 0},
+               "resInteractionMode": null,
+               "resource": [],
+               "roundDecimals": null,
+               "selfProvider": {"selfProvider": true},
+               "showDT": {"showDT": true},
+               "showMetricName": {"showMetricName": true},
+               "showMetricUnit": {"showMetricUnit": true},
+               "showResourceName": {"showResourceName": false},
+               "showSparkline": {"showSparkline": true},
+               "title": "AZ Status",
+               "valueSize": 24,
+               "visualTheme": 5
+            },
+            "gridsterCoords": {
+               "h": 3,
+               "w": 12,
+               "x": 1,
+               "y": 1
+            },
+            "height": 153,
+            "id": "6dc23bab-97f4-4996-becd-6e8507f0261c",
+            "title": "AZ Status",
+            "type": "Scoreboard"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "boxColumns": 3,
+               "boxHeight": null,
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "labelSize": 16,
+               "maxCellCount": 100,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceKindMetrics": [
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel5018-1",
+                        "isStringMetric": false,
+                        "label": "Health",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_846c5843-b5e0-40c5-bc26-50db8a3c245d",
+                        "metricName": "Super Metric|xCloud-AZ vROps Health",
+                        "metricUnitId": null,
+                        "orangeBound": 50,
+                        "redBound": 25,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "xCloud-Availability Zone ",
+                        "unit": null,
+                        "yellowBound": 75
+                     },
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel5018-2",
+                        "isStringMetric": false,
+                        "label": "Risk",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_2bb6ca20-f574-4fb1-9371-7c845cf55df9",
+                        "metricName": "Super Metric|xCloud-AZ vROps Risk",
+                        "metricUnitId": null,
+                        "orangeBound": 50,
+                        "redBound": 75,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "xCloud-Availability Zone ",
+                        "unit": null,
+                        "yellowBound": 25
+                     },
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel5018-3",
+                        "isStringMetric": false,
+                        "label": "Efficiency",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_7bbc4bfa-a9e5-45d3-a255-d534d9514d82",
+                        "metricName": "Super Metric|xCloud-AZ vROPs Efficiency",
+                        "metricUnitId": null,
+                        "orangeBound": 50,
+                        "redBound": 25,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "xCloud-Availability Zone ",
+                        "unit": null,
+                        "yellowBound": 75
+                     }
+                  ],
+                  "resourceMetrics": [],
+                  "subMode": "resourceKindAll"
+               },
+               "mode": {"layoutMode": "fixedView"},
+               "oldMetricValues": false,
+               "periodLength": "last24Hour",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": 0},
+               "resInteractionMode": null,
+               "resource": [],
+               "roundDecimals": null,
+               "selfProvider": {"selfProvider": true},
+               "showDT": {"showDT": true},
+               "showMetricName": {"showMetricName": true},
+               "showMetricUnit": {"showMetricUnit": true},
+               "showResourceName": {"showResourceName": false},
+               "showSparkline": {"showSparkline": true},
+               "title": "vROps Status",
+               "valueSize": 24,
+               "visualTheme": 5
+            },
+            "gridsterCoords": {
+               "h": 3,
+               "w": 4,
+               "x": 1,
+               "y": 4
+            },
+            "height": 153,
+            "id": "729fbcfb-2664-4162-a3c6-9bf455863400",
+            "title": "vROps Status",
+            "type": "Scoreboard"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "boxColumns": 3,
+               "boxHeight": null,
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "labelSize": 16,
+               "maxCellCount": 100,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceKindMetrics": [
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel6611-1",
+                        "isStringMetric": false,
+                        "label": "Health",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_782fabcd-2699-4dfb-a928-8f624c10cdfd",
+                        "metricName": "Super Metric|xCloud-AZ vSphere Health",
+                        "metricUnitId": null,
+                        "orangeBound": 50,
+                        "redBound": 25,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "xCloud-Availability Zone ",
+                        "unit": null,
+                        "yellowBound": 75
+                     },
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel6611-2",
+                        "isStringMetric": false,
+                        "label": "Risk",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_6093f61b-70d5-4213-ac1b-92b9fce58392",
+                        "metricName": "Super Metric|xCloud-AZ vSphere Risk",
+                        "metricUnitId": null,
+                        "orangeBound": 50,
+                        "redBound": 75,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "xCloud-Availability Zone ",
+                        "unit": null,
+                        "yellowBound": 25
+                     },
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel6611-3",
+                        "isStringMetric": false,
+                        "label": "Efficiency",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_d035943a-5438-413d-be94-dd8682f8348b",
+                        "metricName": "Super Metric|xCloud-AZ vSphere Efficiency",
+                        "metricUnitId": null,
+                        "orangeBound": 50,
+                        "redBound": 25,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "xCloud-Availability Zone ",
+                        "unit": null,
+                        "yellowBound": 75
+                     }
+                  ],
+                  "resourceMetrics": [],
+                  "subMode": "resourceKindAll"
+               },
+               "mode": {"layoutMode": "fixedView"},
+               "oldMetricValues": false,
+               "periodLength": "last24Hour",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": 0},
+               "resInteractionMode": null,
+               "resource": [],
+               "roundDecimals": null,
+               "selfProvider": {"selfProvider": true},
+               "showDT": {"showDT": true},
+               "showMetricName": {"showMetricName": true},
+               "showMetricUnit": {"showMetricUnit": true},
+               "showResourceName": {"showResourceName": false},
+               "showSparkline": {"showSparkline": true},
+               "title": "vSphere Status",
+               "valueSize": 24,
+               "visualTheme": 5
+            },
+            "gridsterCoords": {
+               "h": 3,
+               "w": 4,
+               "x": 5,
+               "y": 4
+            },
+            "height": 153,
+            "id": "dffbcfc0-2eca-4c69-b628-8e2bbe596d20",
+            "title": "vSphere Status",
+            "type": "Scoreboard"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "boxColumns": 3,
+               "boxHeight": null,
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "labelSize": 16,
+               "maxCellCount": 100,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceKindMetrics": [
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel8929-1",
+                        "isStringMetric": false,
+                        "label": "Health",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_09b43f95-b4dc-4468-8d96-8b1b83adcd99",
+                        "metricName": "Super Metric|xCloud-AZ vSAN Health",
+                        "metricUnitId": null,
+                        "orangeBound": 50,
+                        "redBound": 25,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "xCloud-Availability Zone ",
+                        "unit": null,
+                        "yellowBound": 75
+                     },
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel8929-2",
+                        "isStringMetric": false,
+                        "label": "Risk",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_370990da-0b81-4ef4-a256-b19742f4dad7",
+                        "metricName": "Super Metric|xCloud-AZ vSAN Risk",
+                        "metricUnitId": null,
+                        "orangeBound": 50,
+                        "redBound": 75,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "xCloud-Availability Zone ",
+                        "unit": null,
+                        "yellowBound": 25
+                     },
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel8929-3",
+                        "isStringMetric": false,
+                        "label": "Efficiency",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_12e5abd3-ae30-4171-b6b6-8e0011ebf427",
+                        "metricName": "Super Metric|xCloud-AZ vSAN Efficiency",
+                        "metricUnitId": null,
+                        "orangeBound": 50,
+                        "redBound": 25,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "xCloud-Availability Zone ",
+                        "unit": null,
+                        "yellowBound": 75
+                     }
+                  ],
+                  "resourceMetrics": [],
+                  "subMode": "resourceKindAll"
+               },
+               "mode": {"layoutMode": "fixedView"},
+               "oldMetricValues": false,
+               "periodLength": "last24Hour",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": 0},
+               "resInteractionMode": null,
+               "resource": [],
+               "roundDecimals": null,
+               "selfProvider": {"selfProvider": true},
+               "showDT": {"showDT": true},
+               "showMetricName": {"showMetricName": true},
+               "showMetricUnit": {"showMetricUnit": true},
+               "showResourceName": {"showResourceName": false},
+               "showSparkline": {"showSparkline": true},
+               "title": "vSAN Status",
+               "valueSize": 24,
+               "visualTheme": 5
+            },
+            "gridsterCoords": {
+               "h": 3,
+               "w": 4,
+               "x": 1,
+               "y": 7
+            },
+            "height": 153,
+            "id": "a1ad1039-c33e-4f80-8336-8af5c47ccd6e",
+            "title": "vSAN Status",
+            "type": "Scoreboard"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "locationFile": "",
+               "locationUrl": "",
+               "refreshContent": {"refreshContent": false},
+               "refreshInterval": 300,
+               "title": "Configuration Maximum Stats",
+               "viewModeHTML": false
+            },
+            "gridsterCoords": {
+               "h": 1,
+               "w": 12,
+               "x": 1,
+               "y": 16
+            },
+            "height": 90,
+            "id": "dd315e8a-a814-4857-8905-c0e986b52192",
+            "title": "Configuration Maximum Stats",
+            "type": "TextDisplay"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "boxColumns": 3,
+               "boxHeight": null,
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "labelSize": 16,
+               "maxCellCount": 100,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceKindMetrics": [
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel10281-1",
+                        "isStringMetric": false,
+                        "label": "Health",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_4f7a6a35-3c7f-4278-9fca-849cd07222da",
+                        "metricName": "Super Metric|xCloud-AZ NSXV Health",
+                        "metricUnitId": null,
+                        "orangeBound": 50,
+                        "redBound": 25,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "xCloud-Availability Zone ",
+                        "unit": null,
+                        "yellowBound": 75
+                     },
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel10281-2",
+                        "isStringMetric": false,
+                        "label": "Risk",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_0a3ab88c-8102-4ad8-ab6d-8e7b528dc719",
+                        "metricName": "Super Metric|xCloud-AZ NSXV Risk",
+                        "metricUnitId": null,
+                        "orangeBound": 50,
+                        "redBound": 75,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "xCloud-Availability Zone ",
+                        "unit": null,
+                        "yellowBound": 25
+                     },
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel10281-3",
+                        "isStringMetric": false,
+                        "label": "Efficiency",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_22feebda-3bc7-458e-87c3-d523be519cf1",
+                        "metricName": "Super Metric|xCloud-AZ NSXV Efficiency",
+                        "metricUnitId": null,
+                        "orangeBound": 50,
+                        "redBound": 25,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "xCloud-Availability Zone ",
+                        "unit": null,
+                        "yellowBound": 75
+                     }
+                  ],
+                  "resourceMetrics": [],
+                  "subMode": "resourceKindAll"
+               },
+               "mode": {"layoutMode": "fixedView"},
+               "oldMetricValues": false,
+               "periodLength": "last24Hour",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": 0},
+               "resInteractionMode": null,
+               "resource": [],
+               "roundDecimals": null,
+               "selfProvider": {"selfProvider": true},
+               "showDT": {"showDT": true},
+               "showMetricName": {"showMetricName": true},
+               "showMetricUnit": {"showMetricUnit": true},
+               "showResourceName": {"showResourceName": false},
+               "showSparkline": {"showSparkline": true},
+               "title": "NSX-V Status",
+               "valueSize": 24,
+               "visualTheme": 5
+            },
+            "gridsterCoords": {
+               "h": 3,
+               "w": 4,
+               "x": 5,
+               "y": 7
+            },
+            "height": 153,
+            "id": "5234cf05-04ec-4f1d-b3d4-5db2697e2aa9",
+            "title": "NSX-V Status",
+            "type": "Scoreboard"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "boxColumns": 3,
+               "boxHeight": null,
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "labelSize": 16,
+               "maxCellCount": 100,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceKindMetrics": [],
+                  "resourceMetrics": [],
+                  "subMode": "resourceKindAll"
+               },
+               "mode": {"layoutMode": "fixedView"},
+               "oldMetricValues": false,
+               "periodLength": "last24Hour",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": 0},
+               "resInteractionMode": null,
+               "resource": [],
+               "roundDecimals": null,
+               "selfProvider": {"selfProvider": true},
+               "showDT": {"showDT": true},
+               "showMetricName": {"showMetricName": true},
+               "showMetricUnit": {"showMetricUnit": true},
+               "showResourceName": {"showResourceName": false},
+               "showSparkline": {"showSparkline": true},
+               "title": "NSX-T Status",
+               "valueSize": 24,
+               "visualTheme": 5
+            },
+            "gridsterCoords": {
+               "h": 3,
+               "w": 4,
+               "x": 1,
+               "y": 13
+            },
+            "height": 153,
+            "id": "d7702cbf-a5b7-481a-9c64-ca62b65cd436",
+            "title": "NSX-T Status",
+            "type": "Scoreboard"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "boxColumns": 3,
+               "boxHeight": null,
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "labelSize": 16,
+               "maxCellCount": 100,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceKindMetrics": [],
+                  "resourceMetrics": [],
+                  "subMode": "resourceKindAll"
+               },
+               "mode": {"layoutMode": "fixedView"},
+               "oldMetricValues": false,
+               "periodLength": "last24Hour",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": 0},
+               "resInteractionMode": null,
+               "resource": [],
+               "roundDecimals": null,
+               "selfProvider": {"selfProvider": true},
+               "showDT": {"showDT": true},
+               "showMetricName": {"showMetricName": true},
+               "showMetricUnit": {"showMetricUnit": true},
+               "showResourceName": {"showResourceName": false},
+               "showSparkline": {"showSparkline": true},
+               "title": "Docker Status",
+               "valueSize": 24,
+               "visualTheme": 5
+            },
+            "gridsterCoords": {
+               "h": 3,
+               "w": 4,
+               "x": 5,
+               "y": 13
+            },
+            "height": 153,
+            "id": "ce128e56-5e08-4175-be13-e6e1f34d374e",
+            "title": "Docker Status",
+            "type": "Scoreboard"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "boxColumns": 3,
+               "boxHeight": null,
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "labelSize": 16,
+               "maxCellCount": 100,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceKindMetrics": [
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel2117-1",
+                        "isStringMetric": false,
+                        "label": "Health",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_57eb24ca-bda0-4c1f-aab7-46834f17a2f1",
+                        "metricName": "Super Metric|xCloud-AZ Compute Health",
+                        "metricUnitId": null,
+                        "orangeBound": 50,
+                        "redBound": 25,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "xCloud-Availability Zone ",
+                        "unit": null,
+                        "yellowBound": 75
+                     },
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel2117-2",
+                        "isStringMetric": false,
+                        "label": "Risk",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_d48a37dc-b3ac-4fcd-9853-4ef7693297c2",
+                        "metricName": "Super Metric|xCloud-AZ Compute Risk",
+                        "metricUnitId": null,
+                        "orangeBound": 50,
+                        "redBound": 75,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "xCloud-Availability Zone ",
+                        "unit": null,
+                        "yellowBound": 25
+                     },
+                     {
+                        "colorMethod": 0,
+                        "id": "extModel2117-3",
+                        "isStringMetric": false,
+                        "label": "Efficiency",
+                        "link": "",
+                        "metricKey": "Super Metric|sm_b09de59d-f189-4d63-b069-9e0eb7ffa387",
+                        "metricName": "Super Metric|xCloud-AZ Compute Efficiency",
+                        "metricUnitId": null,
+                        "orangeBound": 50,
+                        "redBound": 25,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "xCloud-Availability Zone ",
+                        "unit": null,
+                        "yellowBound": 75
+                     }
+                  ],
+                  "resourceMetrics": [],
+                  "subMode": "resourceKindAll"
+               },
+               "mode": {"layoutMode": "fixedView"},
+               "oldMetricValues": false,
+               "periodLength": "last24Hour",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": 0},
+               "resInteractionMode": null,
+               "resource": [],
+               "roundDecimals": null,
+               "selfProvider": {"selfProvider": true},
+               "showDT": {"showDT": true},
+               "showMetricName": {"showMetricName": true},
+               "showMetricUnit": {"showMetricUnit": true},
+               "showResourceName": {"showResourceName": false},
+               "showSparkline": {"showSparkline": true},
+               "title": "DELL EMC Compute Status",
+               "valueSize": 24,
+               "visualTheme": 5
+            },
+            "gridsterCoords": {
+               "h": 3,
+               "w": 4,
+               "x": 1,
+               "y": 10
+            },
+            "height": 153,
+            "id": "89ccaa11-c9d7-41f6-acb3-a5ea2d11dfe5",
+            "title": "DELL EMC Compute Status",
+            "type": "Scoreboard"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "boxColumns": 3,
+               "boxHeight": null,
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "labelSize": 16,
+               "maxCellCount": 100,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceKindMetrics": [],
+                  "resourceMetrics": [],
+                  "subMode": "resourceKindAll"
+               },
+               "mode": {"layoutMode": "fixedView"},
+               "oldMetricValues": false,
+               "periodLength": "last24Hour",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": 0},
+               "resInteractionMode": null,
+               "resource": [],
+               "roundDecimals": null,
+               "selfProvider": {"selfProvider": true},
+               "showDT": {"showDT": true},
+               "showMetricName": {"showMetricName": true},
+               "showMetricUnit": {"showMetricUnit": true},
+               "showResourceName": {"showResourceName": false},
+               "showSparkline": {"showSparkline": true},
+               "title": "Network Device Status",
+               "valueSize": 24,
+               "visualTheme": 5
+            },
+            "gridsterCoords": {
+               "h": 3,
+               "w": 4,
+               "x": 5,
+               "y": 10
+            },
+            "height": 153,
+            "id": "668d7301-202e-45a8-b968-1fffe8c1a079",
+            "title": "Network Device Status",
+            "type": "Scoreboard"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "boxColumns": 3,
+               "boxHeight": null,
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "labelSize": 16,
+               "maxCellCount": 100,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceKindMetrics": [],
+                  "resourceMetrics": [],
+                  "subMode": "resourceKindAll"
+               },
+               "mode": {"layoutMode": "fixedView"},
+               "oldMetricValues": false,
+               "periodLength": "last24Hour",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": 0},
+               "resInteractionMode": null,
+               "resource": [],
+               "roundDecimals": null,
+               "selfProvider": {"selfProvider": true},
+               "showDT": {"showDT": true},
+               "showMetricName": {"showMetricName": true},
+               "showMetricUnit": {"showMetricUnit": true},
+               "showResourceName": {"showResourceName": false},
+               "showSparkline": {"showSparkline": true},
+               "title": "Kubernetes Status",
+               "valueSize": 24,
+               "visualTheme": 5
+            },
+            "gridsterCoords": {
+               "h": 3,
+               "w": 4,
+               "x": 9,
+               "y": 13
+            },
+            "height": 153,
+            "id": "13330fc1-6d78-4a0f-80e8-3e8f944590df",
+            "title": "Kubernetes Status",
+            "type": "Scoreboard"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "impactedBadge": "",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": [
+                  -1,
+                  0
+               ]},
+               "resource": null,
+               "selfProvider": {"selfProvider": false},
+               "title": "Top Alerts",
+               "topIssuesDisplayLimit": 10
+            },
+            "gridsterCoords": {
+               "h": 9,
+               "w": 4,
+               "x": 9,
+               "y": 4
+            },
+            "height": 495,
+            "id": "4d2f19eb-e8e2-4bfd-97e3-7d3b212f9a26",
+            "title": "Top Alerts",
+            "type": "ProblemAlertsList"
+         }
+      ]
+   }],
+   "entries": {"resourceKind": [
+      {
+         "adapterKindKey": "vCenter Operations Adapter",
+         "internalId": "resourceKind:id:0_::_",
+         "resourceKindKey": "vC-Ops-Cluster"
+      },
+      {
+         "adapterKindKey": "VMWARE",
+         "internalId": "resourceKind:id:1_::_",
+         "resourceKindKey": "vSphere World"
+      },
+      {
+         "adapterKindKey": "Container",
+         "internalId": "resourceKind:id:2_::_",
+         "resourceKindKey": "xCloud-AZ"
+      }
+   ]},
+   "uuid": "b6af5e24-54e4-46c9-a1f8-dac0a59ff0d7"
+}

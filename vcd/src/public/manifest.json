@@ -1,0 +1,17 @@
+{
+    "urn": "URN_PLACEHOLDER",
+    "name": "NAME_PLACEHOLDER",
+    "containerVersion": "9.5.0",
+    "version": "VERSION_PLACEHOLDER",
+    "scope": [
+        "service-provider"
+    ],
+    "permissions": [],
+    "description": "Customer onboarding extension for VCD.",
+    "vendor": "VMware",
+    "license": "Copyright (C) VMware 2020. All rights reserved.",
+    "link": "http://www.vmware.com/support",
+    "module": "OnboardingModule",
+    "route": "customer-onboarding",
+    "extensionPoints": []
+}

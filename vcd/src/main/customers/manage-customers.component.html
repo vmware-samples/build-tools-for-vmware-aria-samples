@@ -1,0 +1,76 @@
+<div class="content-area">
+	<h3>Customer Onboarding</h3>
+	<clr-datagrid [clrDgLoading]="isLoading" [(clrDgSingleSelected)]="selectedCustomer">
+		<clr-dg-action-bar>
+			<div class="btn-group">
+				<button type="button" class="btn btn-link" (click)="onboardNewCustomer()">
+					New
+				</button>
+				<button type="button" class="btn btn-link" (click)="onRefreshClick()">
+					Refresh
+				</button>
+				<button
+					type="button"
+					class="btn btn-link"
+					(click)="showRemoveModal = true"
+					[disabled]="
+						isLoading || !selectedCustomer || selectedCustomer?.isSecondDaySelected
+					"
+				>
+					Delete
+				</button>
+			</div>
+		</clr-dg-action-bar>
+		<clr-dg-placeholder>No Customers found</clr-dg-placeholder>
+		<clr-dg-column>Full Name</clr-dg-column>
+		<clr-dg-column [clrDgField]="'name'">Name</clr-dg-column>
+		<clr-dg-row *clrDgItems="let customer of customers" [clrDgItem]="customer">
+			<clr-dg-cell class="name-link-icon">
+				<a
+					href="/login/?service=tenant:{{ customer.name }}&redirectTo=%2Ftenant%2F{{
+						customer.name
+					}}"
+					>{{ customer.displayName }}
+				</a>
+				<a target="_blank" href="/tenant/{{ customer.name }}/"
+					><clr-icon shape="pop-out"></clr-icon>
+				</a>
+				</clr-dg-cell>
+			<clr-dg-cell>{{ customer.name }}</clr-dg-cell>
+		</clr-dg-row>
+		<clr-dg-footer>
+			<clr-dg-pagination #pagination [clrDgPageSize]="10">
+				<clr-dg-page-size [clrPageSizeOptions]="[10, 20, 50, 100]">Customers per page</clr-dg-page-size>
+				{{ pagination.firstItem + 1 }} - {{ pagination.lastItem + 1 }} of
+				{{ pagination.totalItems }} Customers
+			</clr-dg-pagination>
+		</clr-dg-footer>
+	</clr-datagrid>
+
+	<customer-onboarding-wizard
+		#onboardingWizard
+		[formConfiguration]="formConfiguration"
+	></customer-onboarding-wizard>
+
+	<!-- Confirmation modals -->
+	<clr-modal [(clrModalOpen)]="showRemoveModal">
+		<h3 class="modal-title">Warning! Deletion of Customer!</h3>
+		<div class="modal-body">
+			<p>
+				You are about to delete customer {{ selectedCustomer?.displayName }}. Are you sure?
+			</p>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-primary" (click)="showRemoveModal = false">
+				No
+			</button>
+			<button
+				type="button"
+				class="btn btn-outline"
+				(click)="deleteCustomer(selectedCustomer)"
+			>
+				Yes
+			</button>
+		</div>
+	</clr-modal>
+</div>

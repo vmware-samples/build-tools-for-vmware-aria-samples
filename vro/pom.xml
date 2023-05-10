@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.vmware.pscoe.o11n</groupId>
+		<artifactId>typescript-project-all</artifactId>
+		<version>2.31.1</version>
+	</parent>
+
+	<groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+	<artifactId>vro</artifactId>
+	<version>1.0.11-SNAPSHOT</version>
+	<packaging>package</packaging>
+
+	<scm>
+		<developerConnection>${scmDeveloperConnection}</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<description>
+    This package is licensed under https://github.com/vmware-samples/build-tools-for-vmware-aria-samples/blob/main/LICENSE
+	</description>
+	<licenses>
+		<license>
+			<name>BSD 2-Clause License</name>
+			<url>https://github.com/vmware-samples/build-tools-for-vmware-aria-samples/blob/main/LICENSE</url>
+			<distribution>pom</distribution>
+		</license>
+	</licenses>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+			<artifactId>polyglot-python</artifactId>
+			<version>1.0.11-SNAPSHOT</version>
+			<type>package</type>
+		</dependency>
+		<dependency>
+			<groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+			<artifactId>polyglot-ps1</artifactId>
+			<version>1.0.11-SNAPSHOT</version>
+			<type>package</type>
+		</dependency>
+		<dependency>
+			<groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+			<artifactId>polyglot-ts</artifactId>
+			<version>1.0.11-SNAPSHOT</version>
+			<type>package</type>
+		</dependency>
+		<dependency>
+			<groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+			<artifactId>polyglot-all</artifactId>
+			<version>1.0.11-SNAPSHOT</version>
+			<type>package</type>
+		</dependency>
+	</dependencies>
+
+	<properties>
+		<license.includes>**/*.js,**/*.ts</license.includes>
+		<license.excludes>**/*.test.ts,**/*Test.js</license.excludes>
+		<test.coverage.enabled>true</test.coverage.enabled>
+		<test.coverage.reports>text,html,clover,cobertura,lcovonly</test.coverage.reports>
+	</properties>
+</project>

@@ -1,0 +1,22 @@
+{
+  "id": "f3fa99a9-ee81-4db1-8351-e832d3fe905f-sub_1670341849823",
+  "type": "RUNNABLE",
+  "eventTopicId": "network.configure",
+  "name": "Network Configure",
+  "ownerId": "configurationadmin",
+  "subscriberId": "vro-gateway-AmN6cofHdJwtwNAG",
+  "blocking": true,
+  "description": "",
+  "criteria": "",
+  "constraints": {
+    "projectId": null
+  },
+  "timeout": 0,
+  "broadcast": false,
+  "priority": 10,
+  "disabled": false,
+  "system": false,
+  "contextual": false,
+  "runnableType": "extensibility.vro",
+  "runnableId": "240bd8c6-d488-42f1-ab95-7f1be420c053"
+}

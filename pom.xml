@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.vmware.pscoe.o11n</groupId>
+		<artifactId>base-package</artifactId>
+		<version>2.31.1</version>
+	</parent>
+
+	<modules>
+		<module>polyglot-python</module>
+		<module>polyglot-ts</module>
+		<module>polyglot-ps1</module>
+		<module>polyglot-all</module>
+		<module>vro</module>
+		<module>actions</module>
+		<module>xml</module>
+		<module>vrops</module>
+		<module>cs</module>
+		<module>abxs-python</module>
+		<module>abxs-nodejs</module>
+		<module>abxs-ps1</module>
+		<module>abx-all</module>
+		<module>vra</module>
+		<module>vcd</module>
+		<module>vrli</module>
+		<module>base-package</module>
+		<module>vra7</module>
+	</modules>
+
+	<groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+	<artifactId>all</artifactId>
+	<version>1.0.11-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<scm>
+		<developerConnection>scm:git:ssh://git@github.com:vmware-samples/build-tools-for-vmware-aria-samples.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+	<properties>
+		<maven.deploy.skip>true</maven.deploy.skip>
+		<generated.from>ts-vra-ng</generated.from>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
+				<configuration>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<tagNameFormat>v@{project.version}</tagNameFormat>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<skipAssembly>true</skipAssembly>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

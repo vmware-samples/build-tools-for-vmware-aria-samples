@@ -1,0 +1,212 @@
+<clr-wizard
+	#wizard
+	[(clrWizardOpen)]="opened"
+	(clrWizardOnCancel)="onWizardCancelled()"
+	[clrWizardSize]="'xl'"
+	(clrWizardOnFinish)="onWizardFinish()"
+	(clrWizardOnNext)="onWizardNext()"
+	clrWizardPreventDefaultNext="true"
+>
+	<clr-wizard-title>Onboard a New Customer</clr-wizard-title>
+
+	<clr-wizard-button [type]="'cancel'">CANCEL</clr-wizard-button>
+	<clr-wizard-button [type]="'previous'">PREVIOUS</clr-wizard-button>
+	<clr-wizard-button [type]="'next'">NEXT</clr-wizard-button>
+	<clr-wizard-button [type]="'finish'">FINISH</clr-wizard-button>
+
+	<clr-wizard-page [clrWizardPageNextDisabled]="!isOrganizationDetailsValid() || !orgForm.valid">
+		<ng-template clrPageTitle>Organization Details</ng-template>
+
+		<form clrForm clrLayout="horizontal" #orgForm="ngForm">
+			<config-input
+				name="orgName"
+				type="text"
+				label="Name"
+				[required]="true"
+				[configuration]="formConfiguration?.organization?.name"
+				[(value)]="organization.name"
+			></config-input>
+			<config-input
+				name="orgIdentifier"
+				type="text"
+				label="Identifier"
+				[required]="true"
+				[configuration]="formConfiguration?.organization?.identifier"
+				[(value)]="organization.identifier"
+			>
+			</config-input>
+			<clr-select-container>
+				<label for="orgLocation" class="group-label required-field">Location</label>
+				<select clrSelect [(ngModel)]="selectedLocation" name="orgLocation" required>
+					<option value="" disabled selected>Select Location</option>
+					<option
+						*ngFor="let location of formConfiguration.vdc?.locations"
+						[value]="location"
+					>
+						{{ location }}
+					</option>
+				</select>
+				<clr-control-error>You must provide a Location</clr-control-error>
+			</clr-select-container>
+			<clr-select-container>
+				<label for="orgAllocationModel" class="group-label required-field"
+					>Allocation model</label
+				>
+				<select
+					clrSelect
+					[(ngModel)]="virtualDatacenter.allocation"
+					name="orgAllocationModel"
+					required
+				>
+					<option value="Flex">Flex</option>
+					<option value="AllocationVApp">Pay-As-You-Go</option>
+				</select>
+				<clr-control-error>You must provide Allocation Model</clr-control-error>
+			</clr-select-container>
+		</form>
+	</clr-wizard-page>
+	<clr-wizard-page [clrWizardPageNextDisabled]="!isAdminUserValid() || !adminForm.valid">
+		<ng-template clrPageTitle>Admin User Details</ng-template>
+
+		<form clrForm clrLayout="horizontal" #adminForm="ngForm">
+			<config-input
+				name="adminName"
+				type="text"
+				label="Full Name"
+				placeholder="Full Name"
+				[required]="true"
+				[configuration]="formConfiguration?.adminUser?.fullName"
+				[(value)]="adminUser.fullName"
+			></config-input>
+			<config-input
+				name="adminEmail"
+				type="email"
+				label="Email"
+				placeholder="Email"
+				[required]="true"
+				[configuration]="formConfiguration?.adminUser?.email"
+				[(value)]="adminUser.email"
+			></config-input>
+			<config-input
+				name="adminPhoneNumber"
+				type="text"
+				label="Phone Number"
+				placeholder="Phone Number"
+				[required]="true"
+				[configuration]="formConfiguration?.adminUser?.phoneNumber"
+				[(value)]="adminUser.phone"
+			></config-input>
+			<config-input
+				name="adminIM"
+				type="text"
+				label="IM"
+				placeholder="IM"
+				[required]="false"
+				[configuration]="formConfiguration?.adminUser?.IM"
+				[(value)]="adminUser.IM"
+			></config-input>
+		</form>
+	</clr-wizard-page>
+	<clr-wizard-page [clrWizardPageNextDisabled]="!isVdcValid() || !vdcForm.valid">
+		<ng-template clrPageTitle>Virtual Datacenter</ng-template>
+
+		<form clrForm clrLayout="horizontal" #vdcForm="ngForm">
+			<clr-select-container>
+				<label for="pvdc" class="group-label required-field">Provider vDC</label>
+				<select clrSelect [(ngModel)]="selectedProviderVdcHref" name="pvdc" required>
+					<option *ngFor="let option of pvdcPoolOptions" [value]="option.value.href">
+						{{ option.label }}
+					</option>
+				</select>
+				<clr-control-error>You must provide a Provider vDC</clr-control-error>
+			</clr-select-container>
+			<clr-select-container>
+				<label for="netpool" class="group-label required-field">Network Pool</label>
+				<select
+					clrSelect
+					[(ngModel)]="virtualDatacenter.networkPoolReference"
+					name="netpool"
+					required
+				>
+					<option *ngFor="let option of networkPoolOptions" [ngValue]="option.value">
+						{{ option.label }}
+					</option>
+				</select>
+				<clr-control-error>You must provide a Network Pool</clr-control-error>
+			</clr-select-container>
+			<config-input
+				name="networkQuota"
+				type="number"
+				step="1"
+				label="Network Pool Quota"
+				[required]="true"
+				[configuration]="formConfiguration?.vdc?.networkQuota"
+				[(value)]="virtualDatacenter.networkQuota"
+			>
+			</config-input>
+			<config-input
+				name="cpuQuota"
+				type="number"
+				step="1"
+				label="CPU Quota"
+				[required]="true"
+				[configuration]="formConfiguration?.vdc?.cpu"
+				[(value)]="virtualDatacenter.cpuQuota"
+			></config-input>
+			<config-input
+				name="cpuQuotaGuaranteed"
+				type="number"
+				step="1"
+				label="CPU Cores Guaranteed"
+				[required]="true"
+				[configuration]="formConfiguration?.vdc?.cpuGuaranteed"
+				[(value)]="virtualDatacenter.cpuGuaranteed"
+			></config-input>
+			<config-input
+				name="memory"
+				type="number"
+				step="1"
+				label="Memory Quota"
+				[required]="true"
+				[configuration]="formConfiguration?.vdc?.memory"
+				[(value)]="virtualDatacenter.memoryQuota"
+			>
+			</config-input>
+			<config-input
+				name="memoryGuaranteed"
+				type="number"
+				step="1"
+				label="Memory Guaranteed"
+				[required]="true"
+				[configuration]="formConfiguration?.vdc?.memoryGuaranteed"
+				[(value)]="virtualDatacenter.memoryGuaranteed"
+			></config-input>
+
+			<clr-select-container>
+				<label for="storageProfile" class="group-label required-field">
+                    Storage Policy
+                </label>
+				<select
+					clrSelect
+					[(ngModel)]="virtualDatacenter.providerVdcStorageProfile"
+					name="storageProfile"
+					required
+				>
+					<option *ngFor="let option of storageProfileOptions" [ngValue]="option?.value">
+						{{ option.label }}
+					</option>
+				</select>
+				<clr-control-error>You must provide Storage Policy</clr-control-error>
+			</clr-select-container>
+			<config-input
+				name="storageProfileLimit"
+				type="number"
+				step="1"
+				label="Storage Profile Limit"
+				[required]="true"
+				[configuration]="formConfiguration?.vdc?.storageProfileLimit"
+				[(value)]="virtualDatacenter.storageProfileLimit"
+			></config-input>
+		</form>
+	</clr-wizard-page>
+</clr-wizard>

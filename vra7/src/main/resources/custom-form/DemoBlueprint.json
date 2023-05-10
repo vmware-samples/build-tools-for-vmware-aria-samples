@@ -1,0 +1,37 @@
+{
+  "layout": {
+    "pages": [
+      {
+        "id": "general",
+        "title": "General",
+        "sections": [
+          {
+            "id": "section_353fd496",
+            "fields": [
+              {
+                "id": "textArea_79f55bca",
+                "display": "textArea",
+                "state": {
+                  "visible": true,
+                  "read-only": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "schema": {
+    "textArea_79f55bca": {
+      "label": "Demo Field",
+      "type": {
+        "dataType": "string"
+      },
+      "constraints": {}
+    }
+  },
+  "options": {
+    "externalValidations": []
+  }
+}

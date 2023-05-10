@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.vmware.pscoe.serverless</groupId>
+		<artifactId>serverless-project</artifactId>
+		<version>2.31.1</version>
+	</parent>
+
+	<groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+	<artifactId>abxs-nodejs</artifactId>
+	<version>1.0.11-SNAPSHOT</version>
+	<packaging>abx</packaging>
+
+	<scm>
+		<developerConnection>${scmDeveloperConnection}</developerConnection>
+	  <tag>HEAD</tag>
+  </scm>
+
+	<description>
+    This package is licensed under https://github.com/vmware-samples/build-tools-for-vmware-aria-samples/blob/main/LICENSE
+	</description>
+	<licenses>
+		<license>
+			<name>BSD 2-Clause License</name>
+			<url>https://github.com/vmware-samples/build-tools-for-vmware-aria-samples/blob/main/LICENSE</url>
+			<distribution>pom</distribution>
+		</license>
+	</licenses>
+	<properties>
+		<generated.from>package-polyglot-archetype</generated.from>
+
+		<license.includes>**/*.js,**/*.ts,**/*.py,**/*.ps1,**/*.psd,**/*.psm</license.includes>
+		<license.excludes />
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>com.vmware.pscoe.maven.plugins</groupId>
+				<artifactId>abx-package-maven-plugin</artifactId>
+				<version>2.31.1</version>
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

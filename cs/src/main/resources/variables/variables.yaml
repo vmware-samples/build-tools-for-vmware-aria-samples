@@ -1,0 +1,5 @@
+---
+- name: "variable_1"
+  type: "REGULAR"
+  description: ""
+  value: "value1"

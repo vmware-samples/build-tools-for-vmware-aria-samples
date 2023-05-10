@@ -1,0 +1,7 @@
+#
+# VRLI alert names that will be exported/imported in VRLI 
+#
+alerts:
+  - Build Tools for VMware Aria Alert
+content-packs:
+  - sample-content

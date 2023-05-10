@@ -1,0 +1,8 @@
+<clr-input-container>
+	<label for="{{name}}" [innerHtml]="label" class="group-label"
+		[ngClass]="{'required-field': required==true}"></label>
+	<input #inputValue clrInput id="{{name}}" name="{{name}}" type="{{type}}" [placeholder]="placeholder"
+		[pattern]="configuration?.pattern" [minlength]="minLength" [maxlength]="maxLength" [min]="minVal" [max]="maxVal"
+		[step]="step" [required]="required" [(ngModel)]="valueHander" (blur)="fixVal($event)" />
+	<clr-control-error [innerHtml]="validationHint(inputValue.value)"></clr-control-error>
+</clr-input-container>

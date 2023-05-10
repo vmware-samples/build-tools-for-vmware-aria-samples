@@ -1,0 +1,10 @@
+{
+    "en": {
+        "pscoe.common.service_not_available": "Service not available",
+        "pscoe.ri.onboarding.common.pagination.of": "of",
+        "pscoe.ri.onboarding.common.notallowed": "The requested functionality is not allowed for your organization!",
+        "pscoe.ri.onboarding.common.pluginunavailable": "This extention is not available for your organization!",
+        "pscoe.ri.onboarding.nav.onboarding-module-name": "Customer Onboarding",
+        "pscoe.ri.onboarding.nav.onboarding-module-description": "Creating new vCloud Director organization and underlying entities for onboarding a new customer"
+    }
+}

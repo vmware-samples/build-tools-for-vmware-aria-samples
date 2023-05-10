@@ -1,0 +1,59 @@
+---
+kind: "PIPELINE"
+name: "CodeStream Pipeline 01"
+createdBy: "configurationadmin"
+createdAt: "2022-12-05T16:08:56.519+0000"
+updatedAt: "2022-12-06T16:25:17.330+0000"
+icon: "organization,left, is-warning"
+enabled: true
+concurrency: 10
+global: false
+input: {}
+output: {}
+starred: {}
+stageOrder:
+- "Stage0"
+stages:
+  Stage0:
+    taskOrder:
+    - "GET vmware_com"
+    tags: []
+    tasks:
+      GET vmware_com:
+        type: "REST"
+        ignoreFailure: false
+        preCondition: ""
+        input:
+          action: "get"
+          url: "https://www.vmware.com"
+          headers:
+            Accept: "application/json"
+            Content-Type: "application/json"
+          payload: ""
+        endpoints: {}
+        tags: []
+        _configured: true
+notifications:
+  email: []
+  jira: []
+  webhook: []
+options: []
+workspace:
+  image: ""
+  path: ""
+  type: "DOCKER"
+  endpoint: ""
+  customProperties: {}
+  cache: []
+  registry: ""
+  limits:
+    cpu: 1.0
+    memory: 512
+  autoCloneForTrigger: false
+  environmentVariables: {}
+_inputMeta: {}
+_outputMeta: {}
+_warnings: []
+rollbacks: []
+tags: []
+state: "ENABLED"

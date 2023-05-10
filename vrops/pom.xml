@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.vmware.pscoe.vrops</groupId>
+        <artifactId>vrops-package</artifactId>
+        <version>2.31.1</version>
+    </parent>
+    <groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+    <artifactId>vrops</artifactId>
+    <version>1.0.11-SNAPSHOT</version>
+    <packaging>vrops</packaging>
+    <scm>
+        <developerConnection>${scmDeveloperConnection}</developerConnection>
+      <tag>HEAD</tag>
+  </scm>
+        
+	<description>
+    This package is licensed under https://github.com/vmware-samples/build-tools-for-vmware-aria-samples/blob/main/LICENSE
+	</description>
+	<licenses>
+		<license>
+			<name>BSD 2-Clause License</name>
+			<url>https://github.com/vmware-samples/build-tools-for-vmware-aria-samples/blob/main/LICENSE</url>
+			<distribution>pom</distribution>
+		</license>
+	</licenses>
+    <properties>
+        <generated.from>package-vrops-archetype</generated.from>
+        
+        <license.includes>**/*.js,**/*.ts</license.includes>
+        <license.excludes />
+    </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <!-- 
+                    Actual configuration for this plugin is defined in the parent pom.xml and is inherited from there.
+                -->
+                <groupId>com.vmware.pscoe.maven.plugins</groupId>
+                <artifactId>vrops-package-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+<!-- mvn clean package vrealize:push -pl vrops -P<profilename from settings.xml> -->

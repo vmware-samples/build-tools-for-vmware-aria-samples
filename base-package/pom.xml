@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.vmware.pscoe.bsc</groupId>
+        <artifactId>bsc-package</artifactId>
+        <version>2.31.1</version>
+    </parent>
+	<groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+    <artifactId>base-package</artifactId>
+    <version>1.0.11-SNAPSHOT</version>
+    <packaging>bsc</packaging>
+    <scm>
+        <developerConnection>${scmDeveloperConnection}</developerConnection>
+      <tag>HEAD</tag>
+  </scm>
+
+    <description>
+        This package is licensed under ${licenseUrl}
+    </description>
+    <properties>
+        <generated.from>package-bsc-archetype</generated.from>
+    </properties>
+</project>

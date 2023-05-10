@@ -1,0 +1,14 @@
+---
+exportVersion: "1"
+exportId: "8a5e8f5c81bdd17b0181cf3058680bf7"
+name: "abx"
+runtime: "python"
+entrypoint: "handler.handler"
+description: "Configuration importer"
+inputs:
+  secret:8a5e8f5c81bdd17b0181ce3e4dcc6f64: ""
+  psecret:465af23b-5737-4f90-a507-bd45a7dc54b6: ""
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+actionType: "SCRIPT"
+memoryInMB: 200

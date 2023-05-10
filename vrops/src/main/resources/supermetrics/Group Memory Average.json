@@ -1,0 +1,1 @@
+{"bf812485-a686-4aec-b978-665959cb9658":{"resourceKinds":[{"resourceKindKey":"Environment","adapterKindKey":"Container"}],"modificationTime":0,"name":"Group Memory Average","formula":"avg(${adaptertype=VMWARE, objecttype=VirtualMachine, attribute=mem|usage_average, depth=1})","description":""}}

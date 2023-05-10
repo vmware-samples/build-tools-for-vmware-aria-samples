@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.vmware.pscoe.polyglot</groupId>
+		<artifactId>polyglot-project</artifactId>
+		<version>2.31.1</version>
+	</parent>
+
+    <groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+	<artifactId>polyglot-python</artifactId>
+	<version>1.0.11-SNAPSHOT</version>
+	<packaging>package</packaging>
+
+	<scm>
+		<developerConnection>${scmDeveloperConnection}</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<properties>
+		<generated.from>package-polyglot-archetype</generated.from>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>com.vmware.pscoe.maven.plugins</groupId>
+				<artifactId>o11n-actions-package-maven-plugin</artifactId>
+				<version>2.31.1</version>
+				<extensions>true</extensions>
+			</plugin>
+			<plugin>
+				<groupId>com.vmware.pscoe.maven.plugins</groupId>
+				<artifactId>o11n-polyglot-package-maven-plugin</artifactId>
+				<version>2.31.1</version>
+				<extensions>true</extensions>
+			</plugin>
+			<!-- If not explicitly defined, the vrealize package plugin is not found by its prefix -->
+			<plugin>
+				<groupId>com.vmware.pscoe.maven.plugins</groupId>
+				<artifactId>vrealize-package-maven-plugin</artifactId>
+				<version>2.31.1</version>
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

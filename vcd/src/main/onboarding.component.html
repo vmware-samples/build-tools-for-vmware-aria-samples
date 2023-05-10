@@ -1,0 +1,11 @@
+<div class="content-container">
+	<div class="content-area">
+		<span *ngIf="loading" class="spinner spinner-center">Loading...</span>
+
+		<div *ngIf="!loading">
+			<message *ngFor="let message of messages; index as i; trackBy: trackByFn" [text]="message.text"
+				[level]="message.level" [dismissible]="message.dismissible" [dismissed]="message.dismissed"></message>
+			<router-outlet *ngIf="!noVroService"></router-outlet>
+		</div>
+	</div>
+</div>

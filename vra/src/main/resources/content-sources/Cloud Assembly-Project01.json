@@ -1,0 +1,13 @@
+{
+  "projectId": "0b1207a4-180c-4274-a03c-c1721d7fd4ad",
+  "config": {
+    "sourceProjectId": "0b1207a4-180c-4274-a03c-c1721d7fd4ad"
+  },
+  "id": "0fd4a5cc-c86f-4b19-b907-384107eeadb7",
+  "name": "Cloud Assembly-Project01",
+  "description": null,
+  "typeId": "com.vmw.blueprint",
+  "itemsImported": 3,
+  "itemsFound": 3,
+  "global": true
+}

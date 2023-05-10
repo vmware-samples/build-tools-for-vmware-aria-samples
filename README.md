@@ -2,21 +2,25 @@
 
 ## Overview
 
+This is a sample project that contains the different project types supported by Build Tools for VMware Aria.
+
 ## Try it out
 
 ### Prerequisites
 
-* Prereq 1
-* Prereq 2
-* Prereq 3
+You need to have your environment prepared to run [Build Tools for VMware Aria](https://github.com/vmware/build-tools-for-vmware-aria). For details, please check the [Build Tools for VMWware Aria repository](https://github.com/vmware/build-tools-for-vmware-aria).
 
 ### Build & Run
 
-1. Step 1
-2. Step 2
-3. Step 3
+To build this project, trigger the following command from the folder containing the parent pom.xml file:
+
+```bash
+mvn clean package install
+```
 
 ## Documentation
+
+This project contains sample project structure and content, that can be used as reference when creating new Build Tools for VMware Aria projects.
 
 ## Contributing
 
@@ -27,3 +31,8 @@ as an open-source patch. For more detailed information, refer to [CONTRIBUTING.m
 
 ## License
 
+Copyright 2023 VMware, Inc.
+
+This product is licensed to you under the BSD 2 clause (the "License"). You may not use this product except in compliance with the License.
+
+This product may include a number of subcomponents with separate copyright notices and license terms. Your use of these subcomponents is subject to the terms and conditions of the subcomponent's license, as noted in the LICENSE file.

@@ -1,0 +1,175 @@
+{
+   "dashboards": [{
+      "autoswitchEnabled": false,
+      "columnCount": 1,
+      "columnProportion": "1",
+      "creationTime": 1572013591770,
+      "dashboardNavigations": {},
+      "description": "",
+      "disabled": false,
+      "gridsterMaxColumns": 12,
+      "hidden": false,
+      "homeTab": false,
+      "id": "dc16af4d-bd41-42da-9d58-dcb917e74cda",
+      "importAttempts": 0,
+      "importComplete": true,
+      "isDefault": false,
+      "locked": false,
+      "name": "xCloud/xCloud - Alerts by Category 1",
+      "namePath": "xCloud",
+      "rank": 94,
+      "shared": false,
+      "states": [],
+      "temporary": false,
+      "userId": "5cd42490-508c-475b-899f-7ef4c6266312",
+      "widgetInteractions": [],
+      "widgets": [
+         {
+            "collapsed": false,
+            "config": {
+               "alertAction": [],
+               "alertImpact": [],
+               "criticalityLevel": [],
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [
+                     {
+                        "filterTypes": [{
+                           "condition": "CONTAINS",
+                           "filterType": "relationship",
+                           "relType": "DESCENDANT",
+                           "relValue": "dell emc",
+                           "traversalSpec": null
+                        }],
+                        "resourceKind": null
+                     },
+                     {
+                        "filterTypes": [{
+                           "condition": "NOT_CONTAINS",
+                           "filterType": "relationship",
+                           "relType": "DESCENDANT",
+                           "relValue": "vSphere World",
+                           "traversalSpec": null
+                        }],
+                        "resourceKind": null
+                     }
+                  ],
+                  "includedResources": null
+               },
+               "depth": 10,
+               "filterMode": "customFilter",
+               "mode": "all",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": [
+                  -1,
+                  0
+               ]},
+               "resource": [],
+               "selfProvider": {"selfProvider": true},
+               "state": [],
+               "status": [],
+               "tagFilter": null,
+               "title": "DELL EMC Alerts",
+               "type": []
+            },
+            "gridsterCoords": {
+               "h": 8,
+               "w": 12,
+               "x": 1,
+               "y": 1
+            },
+            "height": 438,
+            "id": "525dcd8a-42f7-4b97-965a-a02ae3db0db5",
+            "states": [
+               {
+                  "key": "permViewMode_widget_dc16af4d-bd41-42da-9d58-dcb917e74cda_525dcd8a-42f7-4b97-965a-a02ae3db0db5",
+                  "value": "s%3AproblemDefinitionId"
+               },
+               {
+                  "key": "permAlertGrid_perm_widget_dc16af4d-bd41-42da-9d58-dcb917e74cda_525dcd8a-42f7-4b97-965a-a02ae3db0db5",
+                  "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%255Eo%25253Aid%25253Ds%2525253Ah3%255Eo%25253Aid%25253Ds%2525253Ah4%255Eo%25253Aid%25253Ds%2525253Ah5%255Eo%25253Aid%25253Ds%2525253Ah6%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah11%255Eo%25253Aid%25253Ds%2525253Ah12%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A1%5EstoreState%3Do%253Asorters%253Da%25253Ao%2525253Aroot%2525253Ds%252525253Adata%2525255Eproperty%2525253Ds%252525253AalertLevel%2525255Edirection%2525253Ds%252525253ADESC%2525255Eid%2525253Ds%252525253AalertLevel"
+               },
+               {
+                  "key": "perm_toolbarVisible_widget_dc16af4d-bd41-42da-9d58-dcb917e74cda_525dcd8a-42f7-4b97-965a-a02ae3db0db5",
+                  "value": "b%3A1"
+               },
+               {
+                  "key": "permDateFilter_widget_dc16af4d-bd41-42da-9d58-dcb917e74cda_525dcd8a-42f7-4b97-965a-a02ae3db0db5",
+                  "value": "s%3A%7B%22dateRange%22%3A%22last30Days%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D"
+               }
+            ],
+            "title": "DELL EMC Alerts",
+            "type": "AlertList"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "alertAction": [],
+               "alertImpact": [],
+               "criticalityLevel": [],
+               "customFilter": {
+                  "excludedResources": null,
+                  "filter": [{
+                     "filterTypes": [{
+                        "condition": "EQUALS",
+                        "filterType": "relationship",
+                        "relType": "DESCENDANT",
+                        "relValue": "vSphere World",
+                        "traversalSpec": null
+                     }],
+                     "resourceKind": null
+                  }],
+                  "includedResources": null
+               },
+               "depth": 1,
+               "filterMode": "customFilter",
+               "mode": "all",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": {"relationshipMode": [
+                  -1,
+                  0
+               ]},
+               "resource": [],
+               "selfProvider": {"selfProvider": true},
+               "state": [],
+               "status": [],
+               "tagFilter": null,
+               "title": "vSphere Alert List",
+               "type": []
+            },
+            "gridsterCoords": {
+               "h": 8,
+               "w": 12,
+               "x": 1,
+               "y": 9
+            },
+            "height": 438,
+            "id": "18d3491e-de5e-4b54-855d-7c6b828d5cbf",
+            "states": [
+               {
+                  "key": "permDateFilter_widget_dc16af4d-bd41-42da-9d58-dcb917e74cda_18d3491e-de5e-4b54-855d-7c6b828d5cbf",
+                  "value": "s%3A%7B%22dateRange%22%3A%22last30Days%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D"
+               },
+               {
+                  "key": "perm_toolbarVisible_widget_dc16af4d-bd41-42da-9d58-dcb917e74cda_18d3491e-de5e-4b54-855d-7c6b828d5cbf",
+                  "value": "b%3A1"
+               },
+               {
+                  "key": "permAlertGrid_perm_widget_dc16af4d-bd41-42da-9d58-dcb917e74cda_18d3491e-de5e-4b54-855d-7c6b828d5cbf",
+                  "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%255Eo%25253Aid%25253Ds%2525253Ah3%255Eo%25253Aid%25253Ds%2525253Ah4%255Eo%25253Aid%25253Ds%2525253Ah5%255Eo%25253Aid%25253Ds%2525253Ah6%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah11%255Eo%25253Aid%25253Ds%2525253Ah12%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A1%5EstoreState%3Do%253Asorters%253Da%25253Ao%2525253Aroot%2525253Ds%252525253Adata%2525255Eproperty%2525253Ds%252525253AalertLevel%2525255Edirection%2525253Ds%252525253ADESC%2525255Eid%2525253Ds%252525253AalertLevel"
+               },
+               {
+                  "key": "permViewMode_widget_dc16af4d-bd41-42da-9d58-dcb917e74cda_18d3491e-de5e-4b54-855d-7c6b828d5cbf",
+                  "value": "s%3AproblemDefinitionId"
+               }
+            ],
+            "title": "vSphere Alert List",
+            "type": "AlertList"
+         }
+      ]
+   }],
+   "entries": {},
+   "uuid": "21c3d388-f5b4-472b-8b3d-b4aafee5ef53"
+}

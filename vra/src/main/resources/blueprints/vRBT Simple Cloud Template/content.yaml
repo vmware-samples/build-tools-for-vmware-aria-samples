@@ -1,0 +1,59 @@
+formatVersion: 1
+inputs:
+  vmName:
+    type: string
+    title: Hostname
+    maxLength: 9
+resources:
+  Cloud_vSphere_Machine_1:
+    type: Cloud.vSphere.Machine
+    metadata:
+      layoutPosition:
+        - 0
+        - 0
+    properties:
+      name: ${input.vmName}
+      image: ubuntu-18-local
+      flavor: small
+      customizeGuestOs: false
+      awaitIp: false
+      storage:
+        constraints:
+          - tag: local
+      networks:
+        - network: ${resource.Cloud_NSX_Network_1.id}
+      cloudConfig: |
+        #cloud-config
+        fqdn: ${self.name}
+        hostname: ${self.name}
+        preserve_hostname: false
+        runcmd:
+        - netplan apply
+        - hostnamectl set-hostname --pretty ${self.name}
+        - touch /etc/cloud/cloud-init.disabled
+        write_files:
+        - path: /etc/netplan/90-installer-config.yaml
+          content: |
+            network:
+              version: 2
+              renderer: networkd
+              ethernets:
+                ens160:
+                  dhcp4: no
+                  dhcp6: no
+                  addresses:
+                  - ${self.networks[0].address}/${resource.Cloud_NSX_Network_1.prefixLength}
+                  gateway4: ${resource.Cloud_NSX_Network_1.gateway}
+                  nameservers:
+                    search: ${resource.Cloud_NSX_Network_1.dnsSearchDomains}
+                    addresses: ${resource.Cloud_NSX_Network_1.dns}
+  Cloud_NSX_Network_1:
+    type: Cloud.NSX.Network
+    metadata:
+      layoutPosition:
+        - 1
+        - 0
+    properties:
+      networkType: existing
+      constraints:
+        - tag: overlay-01a

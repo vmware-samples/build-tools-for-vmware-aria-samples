@@ -1,0 +1,10 @@
+---
+name: VRBT Demo
+path: VMware/PSCOE/VRBT Demo
+attributes:
+  field1: string
+  field2: Any
+  field3:
+    type: number
+    value: 5
+  vra_hostname: string

@@ -1,0 +1,20 @@
+{
+  "type": "CONSTANT",
+  "name": "SaltStackConfiguration",
+  "displayName": "vRealize Automation SaltStack Config Server Properties",
+  "description": "Property Group with vRealize Automation SaltStack Config server details such as primary node address and fingerprint.",
+  "properties": {
+    "masterAddress": {
+      "type": "string",
+      "encrypted": false,
+      "description": "Salt Master address associated with vRealize Automation SaltStack Config Server.",
+      "const": "vssc-l-01a.corp.local"
+    },
+    "masterFingerPrint": {
+      "type": "string",
+      "encrypted": false,
+      "description": "Salt Master finger print",
+      "const": "b6:eb:da:46:07:40:27:86:7a:44:9b:96:86:7b:39:52:16:c8:5d:2e:47:2b:be:15:71:2c:1c:a2:fe:33:e5:d1"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.vmware.pscoe.cs</groupId>
+        <artifactId>cs-package</artifactId>
+        <version>2.31.1</version>
+    </parent>
+    <groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+    <artifactId>cs</artifactId>
+    <version>1.0.11-SNAPSHOT</version>
+    <packaging>cs</packaging>
+    <scm>
+        <developerConnection>${scmDeveloperConnection}</developerConnection>
+      <tag>HEAD</tag>
+  </scm>
+    <properties>
+        <generated.from>package-cs-archetype</generated.from>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <!-- 
+                    Actual configuration for this plugin is defined in the parent pom.xml and is inherited from there.
+                -->
+                <groupId>com.vmware.pscoe.maven.plugins</groupId>
+                <artifactId>cs-package-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
