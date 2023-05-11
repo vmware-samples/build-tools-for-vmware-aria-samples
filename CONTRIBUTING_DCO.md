@@ -1,7 +1,5 @@
 # Contributing to build-tools-for-vmware-aria-samples
 
-_NOTE: This is a template document that requires editing before it is ready to use!_
-
 We welcome contributions from the community and first want to thank you for taking the time to contribute!
 
 Please familiarize yourself with the [Code of Conduct](https://github.com/vmware/.github/blob/main/CODE_OF_CONDUCT.md) before contributing.
@@ -22,12 +20,15 @@ We welcome many different types of contributions and not all of them need a Pull
 
 ## Getting started
 
-_TO BE EDITED: This section explains how to build the project from source, including Development Environment Setup, Build, Run and Test._
+This is a sample project that contains the different project types supported by Build Tools for VMware Aria.
 
-_Provide information about how someone can find your project, get set up, build the code, test it, and submit a pull request successfully without having to ask any questions. Also include common errors people run into, or useful scripts they should run._
+You need to have your environment prepared to run [Build Tools for VMware Aria](https://github.com/vmware/build-tools-for-vmware-aria). For details, please check the [Build Tools for VMWware Aria repository](https://github.com/vmware/build-tools-for-vmware-aria).
 
-_List any tests that the contributor should run / or testing processes to follow before submitting. Describe any automated and manual checks performed by reviewers._
+To build this project, trigger the following command from the folder containing the parent pom.xml file:
 
+```bash
+mvn clean package install
+```
 
 ## Contribution Flow
 
@@ -54,21 +55,9 @@ Before submitting your pull request, we advise you to use the following:
 
 For specifics on what to include in your report, please follow the guidelines in the issue and pull request templates when available.
 
-_TO BE EDITED: Add additional information if needed._
-
-
 ## Ask for Help
-
-_TO BE EDITED: Provide information about the channels you use to communicate (i.e. Slack, IRC, Discord, etc)_
 
 The best way to reach us with a question when contributing is to ask on:
 
 * The original GitHub issue
-* The developer mailing list
-* Our Slack channel
-
-
-## Additional Resources
-
-_Optional_
-
+* Our [Slack channel](https://via.vmw.com/join-build-tools-for-aria-on-slack)
