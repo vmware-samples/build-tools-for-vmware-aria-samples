@@ -22,7 +22,6 @@
 		"run-script-os": "^1.1.6"
 	},
 	"dependencies": {
-		"@vmware-pscoe/polyglotpkg": "https://repo1.maven.org/maven2/com/vmware/pscoe/iac/polyglotpkg/2.31.1/polyglotpkg-2.31.1.tgz"
 	},
 	"platform": {
 		"runtime": "powershell",

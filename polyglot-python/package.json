@@ -42,7 +42,5 @@
     "!package.json"
   ],
   "dependencies": {
-		"@vmware-pscoe/polyglotpkg": "https://repo1.maven.org/maven2/com/vmware/pscoe/iac/polyglotpkg/2.31.1/polyglotpkg-2.31.1.tgz",
-    "@vmware-pscoe/vropkg": "https://repo1.maven.org/maven2/com/vmware/pscoe/iac/vropkg/2.31.1/vropkg-2.31.1.tgz"
   }
 }
