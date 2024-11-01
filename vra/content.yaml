@@ -26,13 +26,6 @@ blueprint:
   - vRBT Simple Cloud Template
 subscription:
   - Network Configure
-flavor-mapping:
-image-mapping: []
-storage-profile: []
-region-mapping:
-  cloud-account-tags:
-    export-tag: "env:dev"
-    import-tags: ["env:dev", "env:test"]
 # Pay attention to the format in which the catalog-items are defined here. The description is in the comments above.
 catalog-item:
   - Cloud Assembly-Project01__vRBT Simple Cloud Template

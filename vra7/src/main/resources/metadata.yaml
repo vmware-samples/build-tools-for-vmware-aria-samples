@@ -1,7 +1,0 @@
-name: "com.vmware.pscoe.templates.buildtoolsforvmwareariasamples.vra7-1.0.10-SNAPSHOT"
-productVersion: "7.6.0-SNAPSHOT"
-data:
-- locator: "composite-blueprint/DemoBlueprint.yaml"
-  name: "Demo Blueprint"
-  description: "Demo Blueprint"
-exportTime: "2023-03-06T13:45:05.734Z"
