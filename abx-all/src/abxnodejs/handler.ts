@@ -1,8 +1,8 @@
 /*-
  * #%L
- * abx-all_abxps1
+ * abx-all
  * %%
- * Copyright (C) 2023 VMWARE
+ * Copyright (C) 2025 VMWARE
  * %%
  * Copyright 2023 VMware, Inc.
  * 
@@ -29,7 +29,7 @@ async function delay(func: () => void, ms: number = 1) {
 		setTimeout(() => {
 			try {
 				func();
-				resolve();
+				resolve(undefined);
 			} catch (e) {
 				reject(e.message);
 			}
