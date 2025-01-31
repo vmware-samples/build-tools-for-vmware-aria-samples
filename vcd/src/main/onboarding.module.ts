@@ -2,7 +2,7 @@
  * #%L
  * vcd
  * %%
- * Copyright (C) 2023 VMWARE
+ * Copyright (C) 2025 VMWARE
  * %%
  * Copyright 2023 VMware, Inc.
  * 
@@ -17,10 +17,14 @@ import { Routes, RouterModule } from "@angular/router";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { Store } from "@ngrx/store";
-import { EXTENSION_ROUTE, ExtensionNavRegistration } from "@vcd/sdk/common";
-import { VcdApiClient, VcdSdkModule } from "@vcd/sdk";
-import { PluginModule } from "@vcd/sdk/core";
-import { TranslateService } from "@vcd/sdk/i18n";
+import {
+	EXTENSION_ASSET_URL,
+	EXTENSION_ROUTE,
+	ExtensionNavRegistration,
+	PluginModule,
+	VcdApiClient,
+	VcdSdkModule
+} from "@vcd/sdk";
 import { ClarityModule } from "@clr/angular";
 import { OnboardingComponent } from "./onboarding.component";
 import { OnboardingService } from "./common/services/OnboardingService";
@@ -31,20 +35,27 @@ import { ManageCustomersComponent } from "./customers/manage-customers.component
 import { ConfigInput } from "./common/form/config-input.component";
 import { VcdQueryService } from "./common/services/VcdQueryService";
 import { OrgCreateWizardExtensionPointComponent } from "./customers/org.create.wizard.action.component";
+import { I18nModule, TranslationService } from "@vcd/i18n";
 
 const ROUTES: Routes = [
-    { path: "", component: OnboardingComponent, children: [
-        { path: "", redirectTo: "list", pathMatch: "full" },
-        { path: "list", component: ManageCustomersComponent },
-        { path: "onboard-new-customer", component: CustomerOnboardingWizard },
-        { path: "vdc-form", component: OrgCreateWizardExtensionPointComponent },
-    ] },
+	{
+		path: "",
+		component: OnboardingComponent,
+		children: [
+			{ path: "", redirectTo: "list", pathMatch: "full" },
+			{ path: "list", component: ManageCustomersComponent },
+			{ path: "onboard-new-customer", component: CustomerOnboardingWizard },
+			{ path: "vdc-form", component: OrgCreateWizardExtensionPointComponent }
+		]
+	}
 ];
 
 @NgModule({
     imports: [
         ClarityModule,
         CommonModule,
+        I18nModule.forChild(EXTENSION_ASSET_URL, true),
+        VcdSdkModule.forRoot(),
         FormsModule,
         HttpClientModule,
         VcdSdkModule,
@@ -71,8 +82,13 @@ const ROUTES: Routes = [
     ],
 })
 export class OnboardingModule extends PluginModule {
-    constructor(appStore: Store<any>, @Inject(EXTENSION_ROUTE) extensionRoute: string, translate: TranslateService) {
-        super(appStore, translate);
+	constructor(
+		appStore: Store<any>,
+		@Inject(EXTENSION_ROUTE) extensionRoute: string,
+		translationService: TranslationService
+	) {
+        super(appStore);
+        translationService.registerTranslations();
 
         let registrations: ExtensionNavRegistration[] = [
             {

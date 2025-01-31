@@ -2,7 +2,7 @@
  * #%L
  * vcd
  * %%
- * Copyright (C) 2023 VMWARE
+ * Copyright (C) 2025 VMWARE
  * %%
  * Copyright 2023 VMware, Inc.
  * 
@@ -60,7 +60,7 @@ export class ConfigInput implements OnInit {
         return ["text", "email"].indexOf(this.type) !== -1 ? undefined : this.configuration.max;
     }
 
-    private validationHint(value) {
+    private validationHint(value: any) {
         if (!this.configuration) {
             return
         }

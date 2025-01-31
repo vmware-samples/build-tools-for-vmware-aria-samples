@@ -2,7 +2,7 @@
  * #%L
  * vcd
  * %%
- * Copyright (C) 2023 VMWARE
+ * Copyright (C) 2025 VMWARE
  * %%
  * Copyright 2023 VMware, Inc.
  * 
@@ -12,7 +12,7 @@
  * #L%
  */
 import { Component, OnDestroy } from "@angular/core";
-import { WizardExtensionState, WizardExtensionWithValidationComponent } from "@vcd/sdk/common";
+import { WizardExtensionState, WizardExtensionWithValidationComponent } from "@vcd/sdk";
 import { FormGroup, FormBuilder, FormControl, Validators } from "@angular/forms";
 import { BehaviorSubject, Observable } from "rxjs";
 

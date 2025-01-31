@@ -68,3 +68,5 @@ abxs-ps1/*.tgz
 **/tsconfig.tmp.json
 
 .awcache
+
+.angular

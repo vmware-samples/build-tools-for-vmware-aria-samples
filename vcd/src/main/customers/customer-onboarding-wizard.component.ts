@@ -2,7 +2,7 @@
  * #%L
  * vcd
  * %%
- * Copyright (C) 2023 VMWARE
+ * Copyright (C) 2025 VMWARE
  * %%
  * Copyright 2023 VMware, Inc.
  * 
@@ -23,7 +23,7 @@ import {
 import { OnboardingService } from "../common/services/OnboardingService";
 import { NotificationsService } from "../common/services/NotificationsService";
 import { Router } from "@angular/router";
-import { EXTENSION_ROUTE, SESSION_ORGANIZATION } from "@vcd/sdk/common";
+import { EXTENSION_ROUTE, SESSION_ORGANIZATION } from "@vcd/sdk";
 import { ClrWizard } from "@clr/angular";
 
 export class StringValidator {

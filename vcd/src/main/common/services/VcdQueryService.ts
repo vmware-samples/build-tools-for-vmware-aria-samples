@@ -2,7 +2,7 @@
  * #%L
  * vcd
  * %%
- * Copyright (C) 2023 VMWARE
+ * Copyright (C) 2025 VMWARE
  * %%
  * Copyright 2023 VMware, Inc.
  * 
@@ -70,7 +70,7 @@ export class VcdQueryService {
 	}
 
 	private pushRecords<T>(observer: Subscriber<T>, queryRecords: QueryResultRecordsType) {
-		const items = queryRecords.record || queryRecords["reference"] || [];
+		const items = queryRecords.record || [];
 		items.forEach(rec => observer.next(<T>rec));
 	}
 }
