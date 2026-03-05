@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.vmware.pscoe.bsc</groupId>
         <artifactId>bsc-package</artifactId>
-        <version>2.31.1</version>
+        <version>4.18.0</version>
     </parent>
 	<groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
     <artifactId>base-package</artifactId>

@@ -7,10 +7,11 @@
 	<parent>
 		<groupId>com.vmware.pscoe.o11n</groupId>
 		<artifactId>base-package</artifactId>
-		<version>2.31.1</version>
+		<version>4.18.0</version>
 	</parent>
 
 	<modules>
+		<!-- <module>vcd</module> --> <!-- uses node v14.21.3 and build-tools-for-vmware-aria v2.x -->
 		<module>polyglot-python</module>
 		<module>polyglot-ts</module>
 		<module>polyglot-ps1</module>
@@ -25,7 +26,6 @@
 		<module>abxs-ps1</module>
 		<module>abx-all</module>
 		<module>vra</module>
-		<module>vcd</module>
 		<module>vrli</module>
 		<module>base-package</module>
 	</modules>
