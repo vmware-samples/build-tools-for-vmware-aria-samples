@@ -11,7 +11,7 @@
 	</parent>
 
 	<modules>
-		<!-- <module>vcd</module> --> <!-- uses node v14.21.3 and build-tools-for-vmware-aria v2.x -->
+		<module>vcd</module>
 		<module>polyglot-python</module>
 		<module>polyglot-ts</module>
 		<module>polyglot-ps1</module>
