@@ -24,7 +24,6 @@
 								"output": "/"
 							}
 						],
-						"librariesConfig": {},
 						"optimization": false,
 						"outputHashing": "all",
 						"sourceMap": false,
