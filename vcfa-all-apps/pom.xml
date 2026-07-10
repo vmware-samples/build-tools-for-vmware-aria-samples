@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.vmware.pscoe.vcf</groupId>
+        <artifactId>all-apps-package</artifactId>
+        <version>4.23.0</version>
+    </parent>
+    <groupId>com.vmware.pscoe.templates.buildtoolsforvmwareariasamples</groupId>
+    <artifactId>vcfa-all-apps</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>vcfa-all-apps</packaging>
+    <scm>
+        <developerConnection>${scmDeveloperConnection}</developerConnection>
+    </scm>
+            
+    <description>
+        This package is licensed under null
+    </description>
+    <licenses>
+        <license>
+            <name>TODO: Enter License name</name>
+            <url>null</url>
+            <distribution>pom</distribution>
+        </license>
+    </licenses>
+    <properties>
+        <generated.from>package-vcfa-all-apps-archetype</generated.from>
+        <license.organizationName>TODO: Enter Organization name</license.organizationName>
+        <license.includes>**/*.js,**/*.ts</license.includes>
+        <license.excludes></license.excludes>
+    </properties>
+</project>
